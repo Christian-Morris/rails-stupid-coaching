@@ -1,0 +1,17 @@
+<div class="container my-2">
+  <h1>Stupid Coaching!</h1>
+
+  <div class="card my-2">
+    <blockquote class="blockquote mb-0 p-3 border-start border-3 border-primary">
+      <p><%= params['question'] %></p>
+      <footer class="blockquote-footer"><em>You</em></footer>
+    </blockquote>
+  </div>
+  <div class="card my-2">
+    <blockquote class="blockquote mb-0 p-3 border-start border-3 border-primary alert-warning">
+      <p><%= @answer %></p>
+      <footer class="blockquote-footer"><em>Your coach</em></footer>
+    </blockquote>
+  </div>
+<%= link_to "Ask another question...", ask_path, style: "text-decoration:none"%>
+</div>
